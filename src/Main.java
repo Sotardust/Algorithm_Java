@@ -1,5 +1,4 @@
 import com.dai.Test;
-import com.dai.linkedlist.SingleLinkedList;
 
 public class Main {
 
@@ -7,8 +6,12 @@ public class Main {
 
 
         Test test = new Test() ;
-        test.testSingleLinkedList();
 
+//        test.testSingleLinkedList();
+
+//        test.testMaxSum();
+
+        test.testBiSearch();
     }
 
 
