@@ -5,13 +5,16 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Test test = new Test() ;
+        Test test = new Test();
 
 //        test.testSingleLinkedList();
 
 //        test.testMaxSum();
 
-        test.testBiSearch();
+//        test.testBiSearch();
+
+
+        test.testSort();
     }
 
 

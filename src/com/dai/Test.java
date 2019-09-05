@@ -4,6 +4,7 @@ import com.dai.dynamic.LongestCommonSubsequence;
 import com.dai.linkedlist.Node;
 import com.dai.linkedlist.SingleLinkedList;
 import com.dai.otheralgo.BiSearch;
+import com.dai.sort.Sort;
 
 public class Test {
 
@@ -59,5 +60,24 @@ public class Test {
     public void testBiSearch() {
         BiSearch biSearch = new BiSearch();
         biSearch.biSearch();
+    }
+
+
+    /**
+     * 测试排序
+     */
+    public void testSort(){
+        int[] ints = {2, -4, 11, -3, 5, 16, -4, 1, 7};
+        Sort sort = new Sort();
+//        sort.bubbleSort(ints);
+//        sort.optimizeBubbleSort(ints);
+//        sort.insertSort(ints);
+//        sort.quickSort(ints);
+//        sort.selectSort(ints);
+//        sort.mergeSort(ints);
+//        sort.heapSort(ints);
+        sort.shellSort(ints);
+
+
     }
 }
