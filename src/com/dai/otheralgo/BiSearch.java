@@ -1,5 +1,8 @@
 package com.dai.otheralgo;
 
+/**
+ * 折半查找，又称二分法查找
+ */
 public class BiSearch {
 
     int[] ints = {2, 4, 6, 8, 12, 23, 34, 45, 56, 68, 79};
