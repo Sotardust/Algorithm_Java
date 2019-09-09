@@ -1,6 +1,6 @@
 package com.dai.designpattern.commandpattern;
 
-import android.util.Log;
+
 
 /**
  * created by Administrator on 2018/11/14 16:36
