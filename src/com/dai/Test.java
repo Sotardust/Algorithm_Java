@@ -18,11 +18,11 @@ public class Test {
         linkedList.addNode("fdsa");
         linkedList.addNode(45);
         linkedList.printLinkedList();
-        linkedList.insertNode(2, 5);
-        linkedList.insertNode(0, 545);
-        linkedList.insertNode(5, 45);
-        linkedList.insertNode(6, "长度");
-        linkedList.printLinkedList();
+//        linkedList.insertNode(2, 5);
+//        linkedList.insertNode(0, 545);
+//        linkedList.insertNode(5, 45);
+//        linkedList.insertNode(6, "长度");
+//        linkedList.printLinkedList();
 //        linkedList.removeHead();
 //        linkedList.printLinkedList();
 //        linkedList.removeIndex(5);
@@ -32,7 +32,7 @@ public class Test {
 
 //        Node node = linkedList.reverse1(linkedList.head);
 //        linkedList.getSize(node);
-        linkedList.reverse3();
+//        linkedList.reverse3();
 
 //        linkedList.printLinkedList();
 //        System.out.println("\nsize = " + linkedList.getSize1());

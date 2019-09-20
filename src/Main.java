@@ -7,7 +7,7 @@ public class Main {
 
         Test test = new Test();
 
-//        test.testSingleLinkedList();
+        test.testSingleLinkedList();
 
 //        test.testMaxSum();
 
@@ -24,16 +24,16 @@ public class Main {
 //        y = x^y;  //y=(x^y)^y
 //        x = x^y;  //x=(x^y)^
 
-        System.out.println("x^y = " + (x ^ y));
-        System.out.println("x^y = " + ((x ^ y) ^ x));
-        System.out.println("x^y = " + ((x ^ y) ^ y));
-
-        String a = "123";
-        String b = "123";
-        String d = a + "a";
-        String e = "123" + "a";
-        System.out.println("main() called with: args = [" + (a == b) + "]");
-        System.out.println("main() called with: args = [" + (d == e) + "]");
+//        System.out.println("x^y = " + (x ^ y));
+//        System.out.println("x^y = " + ((x ^ y) ^ x));
+//        System.out.println("x^y = " + ((x ^ y) ^ y));
+//
+//        String a = "123";
+//        String b = "123";
+//        String d = a + "a";
+//        String e = "123" + "a";
+//        System.out.println("main() called with: args = [" + (a == b) + "]");
+//        System.out.println("main() called with: args = [" + (d == e) + "]");
 
     }
 
