@@ -6,11 +6,12 @@ import java.util.List;
 
 public class LeetCodeTest {
 
-
     private static Node node1;
     private static Node node2;
 
     public static void main(String[] args) {
+
+
 
 //        node1 = new Node(2);
 //        addNode1(3);
@@ -34,6 +35,7 @@ public class LeetCodeTest {
 //        lengthOfLongestSubstring(str4);
 //        test1();
     }
+
 
     public static void test1() {
         int[] nums = {-1, 0, 3, 5, 9, 12};
@@ -110,10 +112,11 @@ public class LeetCodeTest {
 
         return sb.toString();
     }
-    private static boolean isEquls(String str){
+
+    private static boolean isEquls(String str) {
         char[] chars = str.toCharArray();
-        for (int i = 0; i < chars.length/2; i++) {
-            if (chars[i] !=chars[chars.length-1-i]) {
+        for (int i = 0; i < chars.length / 2; i++) {
+            if (chars[i] != chars[chars.length - 1 - i]) {
                 return false;
             }
         }
