@@ -8,7 +8,12 @@ public class LeetCodeTest2 {
 //        String s = "LEETCODEISHIRING";
 //        convert(s, 3);
 
-        intToRoman(1994);
+//        intToRoman(1994);
+        String[] strings = {"abab", "aba", ""};
+        String result = longestCommonPrefix(strings);
+        System.out.println("result = " + result);
+        String ab = "adbad";
+        System.out.println("ab.substring(0,0) = " + ab.substring(4, 5));
     }
 
     public static String convert(String s, int numRows) {
@@ -30,7 +35,6 @@ public class LeetCodeTest2 {
 
         return array.toString();
     }
-
 
     /**
      * 整数转罗马数字
@@ -93,15 +97,50 @@ public class LeetCodeTest2 {
         map.put("M", 1000);
 
         int result = 0;
-        for(int i = 0;i < s.length();) {
-            if(i + 1 < s.length() && map.containsKey(s.substring(i, i+2))) {
-                result += map.get(s.substring(i, i+2));
+        for (int i = 0; i < s.length(); ) {
+            if (i + 1 < s.length() && map.containsKey(s.substring(i, i + 2))) {
+                result += map.get(s.substring(i, i + 2));
                 i += 2;
             } else {
-                result += map.get(s.substring(i, i+1));
-                i ++;
+                result += map.get(s.substring(i, i + 1));
+                i++;
             }
         }
         return result;
+    }
+
+    /**
+     * 编写一个函数来查找字符串数组中的最长公共前缀。
+     * <p>
+     * 如果不存在公共前缀，返回空字符串 ""。
+     * <p>
+     * 示例 1:
+     * <p>
+     * 输入: ["flower","flow","flight"]
+     * 输出: "fl"
+     * 示例 2:
+     * <p>
+     * 输入: ["dog","racecar","car"]
+     * 输出: ""
+     * 解释: 输入不存在公共前缀。
+     * 说明:
+     * <p>
+     * 所有输入只包含小写字母 a-z 。
+     * <p>
+     * 来源：力扣（LeetCode）
+     * 链接：https://leetcode-cn.com/problems/longest-common-prefix
+     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     */
+    public static String longestCommonPrefix(String[] strs) {
+
+        if (strs.length == 0) return "";
+        String prefix = strs[0];
+        for (int i = 1; i < strs.length; i++)
+            while (strs[i].indexOf(prefix) != 0) {
+                prefix = prefix.substring(0, prefix.length() - 1);
+                if (prefix.isEmpty()) return "";
+            }
+        return prefix;
+
     }
 }
