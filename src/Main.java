@@ -7,11 +7,11 @@ public class Main {
 
         Test test = new Test();
 
-        test.testSingleLinkedList();
+//        test.testSingleLinkedList();
 
 //        test.testMaxSum();
 
-//        test.testBiSearch();
+        test.testBiSearch();
 
 //        test.testSort();
 
