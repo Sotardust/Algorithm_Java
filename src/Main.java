@@ -10,14 +10,14 @@ public class Main {
 
         Test test = new Test();
 
-        test.testSingleLinkedList();
+//        test.testSingleLinkedList();
 
 //        System.out.println("getStartDate(1) = " + getStartDate(1));
 //        System.out.println("getStartDate(7) = " + getStartDate(31));
 
 //        test.testMaxSum();
 
-//        test.testBiSearch();
+        test.testBiSearch();
 
 //        test.testSort();
 

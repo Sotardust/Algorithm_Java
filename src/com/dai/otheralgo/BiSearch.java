@@ -9,14 +9,14 @@ public class BiSearch {
 
 
     public void biSearch() {
-        biSearch(ints, 68);
+        biSearch(ints, 61);
         biSearch(ints, 2);
         biSearch(ints, 4);
         biSearch(ints, 12);
 
         int mid1 = biSearch(ints, 6, 0, ints.length - 1);
         int mid2 = biSearch(ints, 2, 0, ints.length - 1);
-        int mid3 = biSearch(ints, 12, 0, ints.length - 1);
+        int mid3 = biSearch(ints, 34, 0, ints.length - 1);
         int mid4 = biSearch(ints, 79, 0, ints.length - 1);
         System.out.println("\n mid1 = " + mid1 + " mid2 = " + mid2 + " mid3 = " + mid3 + " mid4 = " + mid4);
     }
@@ -27,20 +27,24 @@ public class BiSearch {
      * @param ints
      * @param number
      */
-    private void biSearch(int[] ints, int number) {
+    private int biSearch(int[] ints, int number) {
         int left = 0, right = ints.length - 1;
         int mid = 0;
         while (left <= right) {
             mid = (left + right) / 2;
             if (ints[mid] == number) {
-                break;
-            } else if (ints[mid] > number) {
+               return mid ;
+            }if (ints[mid] > number) {
                 right = mid - 1;
-            } else {
+            } else if (ints[mid] < number){
                 left = mid + 1;
             }
+
         }
+
+
         System.out.println("mid =" + mid);
+        return -1 ;
     }
 
     /**
