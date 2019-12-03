@@ -17,6 +17,9 @@ public class Test {
         linkedList.addNode(12);
         linkedList.addNode("fdsa");
         linkedList.addNode(45);
+        linkedList.addNode(46);
+        linkedList.addNode(85);
+        linkedList.addNode(5);
         linkedList.printLinkedList();
 //        linkedList.insertNode(2, 5);
 //        linkedList.insertNode(0, 545);

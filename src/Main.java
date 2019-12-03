@@ -1,5 +1,8 @@
 import com.dai.Test;
 
+import java.text.SimpleDateFormat;
+import java.util.Locale;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -8,6 +11,9 @@ public class Main {
         Test test = new Test();
 
         test.testSingleLinkedList();
+
+//        System.out.println("getStartDate(1) = " + getStartDate(1));
+//        System.out.println("getStartDate(7) = " + getStartDate(31));
 
 //        test.testMaxSum();
 
@@ -36,5 +42,15 @@ public class Main {
 //        System.out.println("main() called with: args = [" + (d == e) + "]");
 
     }
-
+    /**
+     * 根据当前时间日期获取前几天日期
+     *
+     * @param day 天数
+     * @return 开始日期
+     */
+    private static String getStartDate(int day) {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd", Locale.CHINA);
+        long result = System.currentTimeMillis() - (long) (day - 1) * 24 * 60 * 60 * 1000;
+        return format.format(result);
+    }
 }

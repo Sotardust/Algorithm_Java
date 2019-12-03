@@ -10,22 +10,20 @@ import java.util.Stack;
  * 表中的数据按顺序依次排列，就像用一条线把数据串联起来一样。
  * 链表就是这种排布方式，特点是添加数据和删除数据速度快，
  * 但是查询数据会比较耗时，这是因为链表在内存中的存储结构造成的。
- *
+ * <p>
  * 单向链表与双向（循环）链表的区别：
- *
+ * <p>
  * 在存储空间方面：
  * 单链表需要的存储空间比双向链表的要少，因为双向链表不仅保存有指向下一个节点的指针，
  * 还保存有指向上一个节点的指针，需要较大的空间来存储双向链表的指针域。
- *
+ * <p>
  * 在处理时间方面：
  * 双向链表的插入与删除操作比单链表的时间要快很多。
  * 在最末尾插入的时候，单链表需要找到需要插入位置的前一个节点，需要遍历整个链表，时间复杂度为O（n），
  * 而双向链表只需要head->tail,就可以得到最后一个节点的位置，然后就可以进行插入操作，时间复杂度为O（1）。
- *
+ * <p>
  * 在删除操作方面，单链表需要遍历到需要删除的节点的前一个节点，
  * 双向链表需要遍历到需要删除的节点，时间复杂度同为O(n)。
- *
- *
  */
 public class SingleLinkedList {
 
@@ -43,9 +41,19 @@ public class SingleLinkedList {
         if (size == 0) {
             this.head = newNode;
         } else {
-            newNode.next = head;
-            head = newNode;
+            //头插法
+//            newNode.next = head;
+//            head = newNode;
+
+//            尾插法
+            Node node = head;
+            while (node.next != null) {
+                node = node.next;
+            }
+             node.next = newNode;
         }
+            getSize(head);
+//        getSize(head);
         size++;
     }
 
