@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        test();
+//        test();
 //
 //        String value = "{\"beans\":[{\"IDCard\":\"152485698547852365\",\"c_addTime\":\"2020-03-21 16:01:53\",\"c_status\":0,\"c_value\":\"32.9\"}]}";
 //
@@ -32,18 +32,18 @@ public class Main {
 //
 ////        test.testSort();
 //
-//        int x = 2, y = 1;
-//        //x = 0000 0010
-//        //y = 0000 0001
-//        //^ = 0000 0011;
-//
-////        x = x^y;
-////        y = x^y;  //y=(x^y)^y
-////        x = x^y;  //x=(x^y)^
-//
-////        System.out.println("x^y = " + (x ^ y));
-////        System.out.println("x^y = " + ((x ^ y) ^ x));
-////        System.out.println("x^y = " + ((x ^ y) ^ y));
+        int x = 2, y = 1;
+//        x = 0000 0010
+//        y = 0000 0001
+//        ^ = 0000 0011;
+
+        x = x^y;
+        y = x^y;  //y=(x^y)^y
+        x = x^y;  //x=(x^y)^
+
+        System.out.println("x^y = " + (x ^ y));
+        System.out.println("x^y = " + ((x ^ y) ^ x));
+        System.out.println("x^y = " + ((x ^ y) ^ y));
 ////
 ////        String a = "123";
 ////        String b = "123";

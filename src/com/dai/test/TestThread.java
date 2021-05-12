@@ -9,7 +9,7 @@ public class TestThread {
     public static void main(String[] args) {
 
         final ThreadPoolExecutor executor = new ThreadPoolExecutor(
-                5,
+                2,
                 10,
                 5000,
                 TimeUnit.MILLISECONDS,
@@ -17,13 +17,14 @@ public class TestThread {
 
 
         for (int i = 0; i < 100; i++) {
+            System.out.println("i = [" + i + "]");
             executor.execute(new Runnable() {
                 @Override
                 public void run() {
 
                     Thread thread = Thread.currentThread();
-                    System.out.println("execute Thread_name = " + thread.getName() + " Thread_activeCount = " + Thread.activeCount() + " getCorePoolSize: " + executor.getCorePoolSize() + " queue.size =" + executor.getQueue().size());
-
+                    System.out.println("execute Thread_name = " + thread.getName() + " Thread_activeCount = " + Thread.activeCount() +
+                            " getCorePoolSize: " + executor.getCorePoolSize() + " queue.size =" + executor.getQueue().size());
                 }
             });
         }
